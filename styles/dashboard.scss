@@ -1,0 +1,22 @@
+:root {
+	--grey-body: #eee;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	background-color: #eee;
+}
+nav {
+	top: 0;
+	width: 100%;
+}
+.profile-wrapper {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,54 @@
+:root {
+	--grey-body: #eee;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	background-color: #eee;
+}
+nav {
+	width: 100%;
+}
+.signup-wrapper {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-signup {
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: auto;
+}
+
+.form-signup .checkbox {
+	font-weight: 400;
+}
+
+.form-signup .form-floating:focus-within {
+	z-index: 2;
+}
+
+.form-signup input[type="name"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.form-signup input[type="date"],
+input[type="tel"],
+input[type="email"],
+#Password {
+	margin-bottom: -1px;
+	border-radius: 0;
+}
+
+.form-signup #cPassword {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
