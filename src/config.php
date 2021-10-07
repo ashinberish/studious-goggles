@@ -1,9 +1,11 @@
 <?php
 session_start();
-$host = getenv('HOST'); /* Hostname */
-$user = getenv('USER'); /* User */
-$pwd = getenv('PASSWORD'); /* Password */
-$dbname = getenv("DBNAME"); /* DB name */
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$host = $url["host"];
+$user = $url["user"];
+$pwd = $url["pass"];
+$dbname = substr($url["path"], 1);
 
 $con = mysqli_connect($host, $user, $pwd,$dbname);
 if (!$con) {

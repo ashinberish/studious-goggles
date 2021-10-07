@@ -117,7 +117,7 @@ else{
 						success: function (response) {
 							var msg = "";
 							if(response == 1) {
-								window.location = "Dashboard.php";
+								window.location = "dashboard.php";
 							} else if(response == "pass incorrect") {
 								msg = "Current password is incorrect.";
 							} else{

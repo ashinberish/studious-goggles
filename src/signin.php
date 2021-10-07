@@ -94,7 +94,7 @@
 						success: function (response) {
 							var msg = "";
 							if (response == 1) {
-								window.location = "Dashboard.php";
+								window.location = "dashboard.php";
 							} else {
 								msg = "Invalid username and password!";
 							}
